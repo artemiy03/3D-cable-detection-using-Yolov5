@@ -2,11 +2,11 @@
 ##
 **Overview**
 ##
-This project is a module for detecting thin, deformable 3D objects (specifically cables) in a 3D environment using YOLOv5. We utilize a 3D camera that captures the same scene twice: once as a 2D RGB image and once as a depth image. Since YOLOv5 operates on 2D data, we process the 2D RGB and depth images separately with distinct models trained on each type of data.
+This project is a module for detecting thin, deformable 3D objects (specifically cables) in a 3D environment using YOLOv5. We utilize a 3D camera that captures the same scene twice: once as a 2D RGB image and once as a depth image. Since YOLOv5 operates on 2D data, we process the 2D RGB and depth images separately with distinct models trained on each type of data. The depth data is represented as a 2D image where each color corresponds to a specific depth value, effectively encoding distance information using color gradients. This format allows the YOLOv5 network to be trained on depth images in the same manner as standard 2D images, leveraging its capabilities for object detection.
 ##
 **Contents**
 ##
-Beside an original yolov5 module, there are 2 weights named "final.pt" and "depth1.pt" in the weights folder, final.py code to run the fusion part of the module and few example images in the data/combined folders. In this path there are two folders: rgb and depth, they contain the same scenes captured once by the rgb module of the camera and once by the depth module of the camera.
+Beside an original yolov5 module, there are 2 weights named "final.pt" and "depth1.pt" in the weights folder, final.py code to run the fusion part of the module and few example images in the data/combined folders. In this path there are two folders: rgb and depth, they contain the same scenes captured once by the rgb module of the camera and once by the depth module of the camera. You can find additional marked with bounding boxes depth and regular 2D RGB images at my roboflow account: https://app.roboflow.com/artemiy
 ##
 **Camera and Data**
 ##
