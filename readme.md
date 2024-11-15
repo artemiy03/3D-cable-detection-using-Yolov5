@@ -39,5 +39,5 @@ Any Mode: Prints all bounding boxes from both the 2D RGB and depth network outpu
 **Running the Fusion**
 ##
 Run final.py script, it is set up to work directly with the required file paths, and you can easily adjust these paths by following the instructions in the code. The voting options (conservative, permissive, any) can be toggled on or off.  
-Ensure that the paths for the input images and output results are correctly set in final.py.  
+The input at this part are the .txt files of the 2D RGB and depth detections by yolov5, that were recieved at the stage "Detection process" and the output are new clear 2D images with bounding boxes marked by any of the voting mechanisms provided in final.py. They will be located in /runs path in relevant folders. All these paths are provided in final.py and easy adjustable.
 The confidence threshold and voting mechanism can be adjusted within final.py as needed.  
