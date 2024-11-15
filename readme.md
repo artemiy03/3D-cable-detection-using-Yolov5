@@ -54,7 +54,7 @@ If you use this project in your research, please cite it as follows:
 }
 
 ##
-**Acknowledgments**
+**Acknowledgements**
 ##
 The YOLOv5 model used in this project is provided by Ultralytics. Please acknowledge the YOLOv5 model as follows:
 ```bibtex  
