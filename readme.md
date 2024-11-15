@@ -39,5 +39,29 @@ Any Mode: Prints all bounding boxes from both the 2D RGB and depth network outpu
 **Running the Fusion**
 ##
 Run final.py script, it is set up to work directly with the required file paths, and you can easily adjust these paths by following the instructions in the code. The voting options (conservative, permissive, any) can be toggled on or off.  
-The input at this part are the .txt files of the 2D RGB and depth detections by yolov5, that were recieved at the stage "Detection process" and the output are new clear 2D images with bounding boxes marked by any of the voting mechanisms provided in final.py. They will be located in /runs path in relevant folders. All these paths are provided in final.py and easy adjustable.
-The confidence threshold and voting mechanism can be adjusted within final.py as needed.  
+The input at this part are the .txt files of the 2D RGB and depth detections by yolov5, that were recieved at the stage "Detection process" and the output are new clear 2D images with bounding boxes marked by any of the voting mechanisms provided in final.py. They will be located in /runs path in relevant folders. All these paths are provided in final.py and easy adjustable. The confidence threshold and voting mechanism can be adjusted within final.py as needed.  
+##
+**Citation**
+##
+If you use this project in your research, please cite it as follows:  
+BibTeX entry for academic papers:  
+```bibtex  
+@misc{tomanov2024cabledetection,  
+  author = {Tumanov, Artemiy},    
+  title = {3D Cable Detection Using YOLOv5},  
+  year = {2024},  
+  howpublished = {\url{https://github.com/artemiy03/3D-cable-detection-using-Yolov5}},  
+  note = {GitHub repository}  
+}
+##
+**Acknowledgments**
+##
+The YOLOv5 model used in this project is provided by Ultralytics. Please acknowledge the YOLOv5 model as follows:
+```bibtex  
+@misc{jocher2023yolov5,  
+  title={YOLOv5: You Only Look Once version 5},  
+  author={Jocher, G. and Chaurasia, A. and Qiu, J. and LeGrand, A.},  
+  year={2023},  
+  howpublished={\url{https://github.com/ultralytics/yolov5}},  
+  note={Accessed: 2024-11-15}  
+}
