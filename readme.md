@@ -52,6 +52,7 @@ If you use this project in your research, please cite it as follows:
   howpublished = {\url{https://github.com/artemiy03/3D-cable-detection-using-Yolov5}},  
   note = {GitHub repository}  
 }
+
 ##
 **Acknowledgments**
 ##
