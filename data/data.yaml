@@ -1,0 +1,17 @@
+train: ../data/train/images
+#val: ../data/validLDO1/images
+#test: ..t/data/testLDO1/images
+#val: ../data/test/images
+#test: ../data/valid/images
+#val: ../data/lab_cables/test/images #regular data
+val: ../data/depth/test/images #the depth data
+
+nc: 3
+names: ['LDO', 'plug', 'port']
+
+roboflow:
+  workspace: artemiy
+  project: yolov5-ji2ek
+  version: 32
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/artemiy/yolov5-ji2ek/dataset/32
