@@ -41,6 +41,13 @@ Any Mode: Prints all bounding boxes from both the 2D RGB and depth network outpu
 Run final.py script, it is set up to work directly with the required file paths, and you can easily adjust these paths by following the instructions in the code. The voting options (conservative, permissive, any) can be toggled on or off.  
 The input at this part are the .txt files of the 2D RGB and depth detections by yolov5, that were recieved at the stage "Detection process" and the output are new clear 2D images with bounding boxes marked by any of the voting mechanisms provided in final.py. They will be located in /runs path in relevant folders, examples provided. All these paths are provided in final.py and easy adjustable. The confidence threshold and voting mechanism can be adjusted within final.py as needed.  
 ##
+**Possible future applications**
+##
+As previously mentioned, the fusion process includes three distinct voting mechanisms: conservative, permissive, and any, each suited for possible specific tasks.  
+The conservative mechanism prioritizes high confidence, making it ideal for applications where precise cable detection is crucial, such as a robotic arm attempting to grasp the cables.
+The permissive mechanism aims to identify a larger area of cables but with lower confidence. This can be beneficial in scenarios where the objective is to simply avoid cables rather than interact with them directly.
+The any mechanism combines detections from both networks without additional filtering, serving as a comprehensive output that can be a valuable baseline for further research and analysis.
+##
 **Citation**
 ##
 If you use this project in your research, please cite it as follows:  
