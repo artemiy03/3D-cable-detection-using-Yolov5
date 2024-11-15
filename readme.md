@@ -44,7 +44,6 @@ The input at this part are the .txt files of the 2D RGB and depth detections by 
 **Citation**
 ##
 If you use this project in your research, please cite it as follows:  
-BibTeX entry for academic papers:  
 ```bibtex  
 @misc{tomanov2024cabledetection,  
   author = {Tumanov, Artemiy},    
